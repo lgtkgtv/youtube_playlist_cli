@@ -1,0 +1,26 @@
+# Secrets
+client_secret.json
+credentials.json
+token.json
+token*.json
+
+# Environment
+.venv/
+.env
+.env.*
+.python-version 
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Output files
+*.md
+*.json
+*.csv
+
+# IDE/editor configs
+.vscode/
+.idea/
+

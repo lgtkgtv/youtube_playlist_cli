@@ -1,0 +1,12 @@
+## config.yaml
+# YAML configuration (can be overridden by CLI flags)
+email: "lgtkgtv@gmail.com"
+extended: true
+group_by_privacy: true
+sort_by_count: false
+no_truncate: false
+filter: ""
+markdown: true
+export_md: "output.md"
+export_json: "output.json"
+export_csv: "output.csv"
