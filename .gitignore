@@ -1,44 +1,43 @@
 ########################################
 # 🔐 Secrets & Credentials
 ########################################
-client_secret.json           # API/client secrets
-credentials.json             # OAuth or service credentials
-token*.json                  # Any other token file (e.g., token_user.json)
+client_secret.json
+token_lgtkgtv_at_gmail.com.json
 
 ########################################
 # 🧪 Virtual Environments
 ########################################
-.venv/                       # Local virtual environment directory
-.env                         # Environment config files
-.env.*                       # Other env variants (e.g., .env.dev)
-.python-version              # Pyenv version file
+.venv/
+.env
+.env.*
+.python-version
 
 ########################################
 # 🐍 Python Artifacts
 ########################################
-__pycache__/                 # Python bytecode cache
-*.py[cod]                    # Compiled bytecode files
-*.egg-info/                  # Packaging metadata
-dist/                        # Distribution packages (wheel, tar.gz, etc.)
-build/                       # Build directory (if created)
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
 
 ########################################
 # 📤 Output & Generated Files
 ########################################
-*.json                       # Generated data files (careful if config/json source files exist)
-*.csv                        # Exported or generated CSVs
-output.*                     # Any files named like output.csv, output.md, output.json
-
+*.json
+*.csv
+output.*
 
 ########################################
 # 🛠️ IDE / Editor Configs
 ########################################
-.vscode/                     # VSCode settings
-.idea/                       # JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.vscode/
+.idea/
 
 ########################################
 # 🧪 Testing / Coverage (if using pytest, etc.)
 ########################################
-# .pytest_cache/            # Uncomment if using pytest
-# htmlcov/                  # Coverage report directory
-# coverage.xml              # Coverage data
+# .pytest_cache/
+# htmlcov/
+# coverage.xml
+
