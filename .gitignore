@@ -20,6 +20,7 @@ __pycache__/                 # Python bytecode cache
 *.py[cod]                    # Compiled bytecode files
 *.egg-info/                  # Packaging metadata
 dist/                        # Distribution packages (wheel, tar.gz, etc.)
+build/                       # Build directory (if created)
 
 ########################################
 # 📤 Output & Generated Files
