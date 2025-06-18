@@ -9,9 +9,13 @@ CLI tool to manage YouTube playlists.
 ```bash
 uv init          # initialize project environment
 uv sync          # install all dependencies from pyproject.toml
-uv venv activate # activate the virtual environment
+source .venv/bin/activate   # activate the virtual environment
 uv run ./run.sh  # run your project
 ```
+## TBD
+
+uv run ./run.sh --email="lgtkgtv@gmail.com" has no effect 
+
 
 # Project structure 
 
