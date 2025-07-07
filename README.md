@@ -1,5 +1,7 @@
 # ytcli
 
+---
+
 CLI tool to manage YouTube playlists.
 
 ---
@@ -106,7 +108,17 @@ secrets/
 *.md
 ```
 
----
+## ✅ Milestone 1: GitHub Check-In Guide
 
-Happy playlist managing! 🎵
+### 📦 What's Ready
 
+* OAuth-enabled YouTube playlist CLI tool
+* Clean `README.md` with setup and usage docs
+* `uv`-based virtual environment workflow
+* Secure `client_secret.json` handling
+* Export to Markdown, JSON, CSV
+* Smart CLI flags and config via YAML
+
+## 🚧 Milestone 2 Roadmap (Planned Features)
+
+*
