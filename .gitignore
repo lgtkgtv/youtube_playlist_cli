@@ -1,43 +1,36 @@
-########################################
-# 🔐 Secrets & Credentials
-########################################
-client_secret.json
-token_lgtkgtv_at_gmail.com.json
-
-########################################
-# 🧪 Virtual Environments
-########################################
-.venv/
-.env
-.env.*
-.python-version
-
-########################################
-# 🐍 Python Artifacts
-########################################
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.egg-info/
+*.pyo
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Secrets & OAuth tokens
+client_secret.json
+token_*.json
+secrets/
+
+# CLI output exports
+*.csv
+*.json
+*.md
+
+# Build artifacts
 dist/
 build/
+*.egg-info/
 
-########################################
-# 📤 Output & Generated Files
-########################################
-*.json
-*.csv
-output.*
+# System files
+.DS_Store
+Thumbs.db
 
-########################################
-# 🛠️ IDE / Editor Configs
-########################################
-.vscode/
-.idea/
+# Dotenv and local config overrides
+.env
 
-########################################
-# 🧪 Testing / Coverage (if using pytest, etc.)
-########################################
-# .pytest_cache/
-# htmlcov/
-# coverage.xml
+# Jupyter Notebook checkpoints (if you add any later)
+.ipynb_checkpoints/
 
