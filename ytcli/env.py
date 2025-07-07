@@ -8,7 +8,9 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 
 # YouTube Data API v3 scope
-SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
+# SCOPES = ["https://www.googleapis.com/auth/youtube.readonly"]
+SCOPES = ["https://www.googleapis.com/auth/youtube"]
+
 
 # Default path from env or fallback
 def get_valid_client_secret():

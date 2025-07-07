@@ -1,4 +1,3 @@
-## ytcli/config.py
 import argparse
 import yaml
 
@@ -19,6 +18,11 @@ def load_config():
     parser.add_argument("--config", type=str, default=default_config_file)
     parser.add_argument("--email", type=str, required=False, default=None)
 
+    # Milestone 2: Playlist clone support
+    parser.add_argument("--clone-playlist", type=str, help="Playlist ID to clone", default=None)
+    parser.add_argument("--new-title", type=str, help="Title of new cloned playlist", default=None)
+    parser.add_argument("--remove-original", action="store_true", help="Delete the original playlist after cloning")
+
     # Parse initial CLI args to check if --config is specified
     args, remaining_argv = parser.parse_known_args()
 
@@ -35,3 +39,4 @@ def load_config():
     # Final parse to apply merged args, allow CLI to override YAML
     parser.set_defaults(**vars(args))
     return parser.parse_args(remaining_argv)
+

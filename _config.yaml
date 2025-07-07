@@ -10,3 +10,9 @@ markdown: true
 export_md: "output.md"
 export_json: "output.json"
 export_csv: "output.csv"
+
+# Milestone 2: Playlist cloning
+clone_playlist: "4K Italy"
+new_title: "4K Italy - Cleaned"
+remove_original: false
+

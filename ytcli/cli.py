@@ -1,21 +1,55 @@
 ## ytcli/cli.py
 
+import argparse
+import sys
 import json
 import csv
 
-from .config import load_config
 from .env import init_youtube_client
 from .playlist_utils import fetch_playlists, render_markdown_table
+from .playlist_clone import clone_playlist
 
 
 def main():
-    args = load_config()
+    parser = argparse.ArgumentParser(description="YouTube Playlist CLI")
 
-    if not hasattr(args, "email") or not args.email:
-        print("❌ Missing required --email argument. Please provide it via CLI or config.yaml.")
-        return
+    # Authentication
+    parser.add_argument("--email", required=True, help="Google account email to authenticate")
+
+    # Clone logic
+    parser.add_argument("--clone-playlist", type=str, help="Playlist title to clone")
+    parser.add_argument("--new-title", type=str, help="New title for cloned playlist")
+
+    # Display and export
+    parser.add_argument("--extended", action="store_true")
+    parser.add_argument("--markdown", action="store_true")
+    parser.add_argument("--no-truncate", action="store_true")
+    parser.add_argument("--group-by-privacy", action="store_true")
+    parser.add_argument("--sort-by-count", action="store_true")
+    parser.add_argument("--filter", type=str, default=None)
+    parser.add_argument("--export-md", type=str, default=None)
+    parser.add_argument("--export-json", type=str, default=None)
+    parser.add_argument("--export-csv", type=str, default=None)
+    parser.add_argument("--remove-original", action="store_true", help="Delete the original playlist after cloning")
+
+    args = parser.parse_args()
 
     yt = init_youtube_client(email=args.email)
+
+    if args.clone_playlist:
+        if not args.new_title:
+            print("❌ --new-title is required when using --clone-playlist")
+            sys.exit(1)
+        # clone_playlist(youtube=yt, source_title=args.clone_playlist, new_title=args.new_title)
+        clone_playlist(
+            youtube=yt,
+            source_title=args.clone_playlist,
+            new_title=args.new_title,
+            remove_original=args.remove_original,
+        )
+        
+        return
+
     playlists = fetch_playlists(yt, args)
 
     if args.markdown:
