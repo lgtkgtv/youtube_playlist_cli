@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: ytcli
+Version: 0.3.0
+Summary: Multi-account YouTube playlist/subscription manager
+Requires-Python: >=3.12
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: PyYAML

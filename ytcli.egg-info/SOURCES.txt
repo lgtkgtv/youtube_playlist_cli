@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+ytcli/__init__.py
+ytcli/auth.py
+ytcli/cli.py
+ytcli/export.py
+ytcli/playlist_utils.py
+ytcli/subscriptions.py
+ytcli.egg-info/PKG-INFO
+ytcli.egg-info/SOURCES.txt
+ytcli.egg-info/dependency_links.txt
+ytcli.egg-info/requires.txt
+ytcli.egg-info/top_level.txt

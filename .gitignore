@@ -1,36 +1,7 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*.pyo
-*.so
-
-# Virtual environment
 .venv/
-env/
-venv/
-
-# Secrets & OAuth tokens
-client_secret.json
-token_*.json
+tokens/
 secrets/
-
-# CLI output exports
-*.csv
+data/
 *.json
-*.md
-
-# Build artifacts
-dist/
-build/
-*.egg-info/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Dotenv and local config overrides
-.env
-
-# Jupyter Notebook checkpoints (if you add any later)
-.ipynb_checkpoints/
-
+*.csv
+__pycache__/
