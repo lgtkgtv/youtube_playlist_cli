@@ -1,5 +1,22 @@
 # ytcli - Multi-Account YouTube Playlist Manager
 
+## ref
+https://developers.google.com/youtube/v3/quickstart/python
+    https://developers.google.com/youtube/v3/docs/channels
+    https://developers.google.com/youtube/v3/docs/playlists
+    https://developers.google.com/youtube/v3/docs/playlistItems
+    https://developers.google.com/youtube/v3/docs/videos
+    https://developers.google.com/youtube/v3/docs/subscriptions
+    https://developers.google.com/youtube/v3/docs/search
+    https://developers.google.com/youtube/v3/docs/comments
+    https://developers.google.com/youtube/v3/docs/activities
+
+YouTube Data API PyDoc documentation      
+    https://developers.google.com/resources/api-libraries/documentation/youtube/v3/python/latest/
+
+YouTube Data API reference documentation 
+    https://developers.google.com/youtube/v3/docs
+
 ## ✅ Features
 
 - Authenticate and manage **multiple YouTube accounts**
