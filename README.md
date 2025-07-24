@@ -1,6 +1,7 @@
 # ytcli - Multi-Account YouTube Playlist Manager
 
-## ref
+## YT API ref
+```
 https://developers.google.com/youtube/v3/quickstart/python
     https://developers.google.com/youtube/v3/docs/channels
     https://developers.google.com/youtube/v3/docs/playlists
@@ -16,6 +17,7 @@ YouTube Data API PyDoc documentation
 
 YouTube Data API reference documentation 
     https://developers.google.com/youtube/v3/docs
+```
 
 ## ✅ Features
 
