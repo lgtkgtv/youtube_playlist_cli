@@ -17,6 +17,9 @@ YouTube Data API PyDoc documentation
 
 YouTube Data API reference documentation 
     https://developers.google.com/youtube/v3/docs
+
+GitRepo
+    https://github.com/youtube/api-samples
 ```
 
 ## ✅ Features
